@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="assets/css/styles.css"/>
+  <script defer src="assets/js/app.js"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Clock App</title>
+</head>
+<body>
+  <!-- <header>
+    ???
+  </header> -->
+
+  <main>
+
+    <div class="ecran-chargement">
+      <div class="chargement__text">
+        <p id="loading" class="text-preset2">Clock App</p>
+        <p id="erreur"></p>
+      </div>
+      <div class="bkg-rects">
+        <div class="rect"></div>
+        <div class="rect"></div>
+        <div class="rect"></div>
+        <div class="rect"></div>
+        <div class="rect"></div>
+        <div class="rect"></div>
+        <div class="rect"></div>
+        <div class="rect"></div>
+        <div class="rect"></div>
+      </div>
+    </div>
+
+    <div id="detail" class="details">
+      <div class="details__col">
+        <div class="row">
+          <p>CURRENT TIMEZONE</p>
+          <h2 id="timezone"></h2>
+        </div>
+        <div class="row">
+          <p>DAY OF THE YEAR</p>
+          <h2 id="day-of-year"></h2>
+        </div>
+      </div>
+
+      <div class="line"></div>
+      
+      <div class="details__col">
+        <div class="row">
+          <p>DAY OF THE WEEK</p>
+          <h2 id="day-of-week"></h2>
+        </div>
+        <div class="row">
+          <p>WEEK NUMBER</p>
+          <h2 id="week-number"></h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="simple">
+      <div class="simple__col1">
+        <p id="anecdote">“The science of operations, as derived from mathematics more especially, is a science of itself, and has its own abstract truth and value.”</p>
+          <p class="text-preset7--bold" id="credit">Ada Lovelace</p>
+      </div>
+      <div class="simple__col2">
+        <div class="row_2">
+          <p class="text-preset4"><span id="extension"></span>, IT'S CURRENTLY</p>
+          <h1 id="temps"><span id="heure"></span>:<span id="minute"></span></h1>
+          <p class="text-preset3" id="lieu">IN TORONTO, AMERICA</p>
+        </div>
+        <button id="expand">
+          <span id="expand__text">MORE</span>
+          <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#303030" cx="20" cy="20" r="20"/><path stroke="#FFF" stroke-width="2" d="M14 23l6-6 6 6"/></g></svg>
+        </button>
+      </div>
+    </div>
+
+  </main>
+
+</body>
+</html>

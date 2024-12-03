@@ -1,0 +1,104 @@
+/**
+* @author Prenom Nom courriel
+* @todo Préciser l’interlignage sur le body pour l’écran large
+* @todo Utiliser le mixin fontSize pour définir les tailles de polices
+* @todo Utiliser une variable pour la media query de la règle body
+*/
+
+/**** Typographie responsive ****/
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $fontePrimaire;
+  font-size: 18px; /* 16px pour toutes les largeurs d'écran */
+  line-height: 28px;
+  // @media (min-width: 601px) {
+  // }
+}
+
+
+h1, .text-preset1 {
+  font-size: 10rem;
+  font-weight: bold;
+  line-height: -5px;
+  color: #FFF;
+  @media(min-width:$tablet) {
+    font-size: 17rem;
+  }
+  @media(min-width:$desktop) {
+    font-size: 20rem;
+  }
+}
+
+h2, .text-preset2 {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 68px;
+  @media(min-width:$tablet) {
+    font-size: 4rem;
+  }
+  @media(min-width:$desktop) {
+    font-size: 5.6rem;
+  }
+}
+
+h3, .text-preset3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 28px;
+  letter-spacing: -4.8;
+  text-transform: capitalize;
+  color: #FFF;
+  @media(min-width:$tablet) {
+    font-size: 1.8rem;
+  }
+  @media(min-width:$desktop) {
+    font-size: 2.4rem;
+  }
+}
+
+h4, .text-preset4 {
+  font-size: 1.5rem;
+  font-weight: normal;
+  line-height: 28px;
+  letter-spacing: 4px;
+  color: #FFF;
+  @media(min-width:$tablet) {
+    font-size: 1.8rem;
+  }
+  @media(min-width:$desktop) {
+    font-size: 2rem;
+  }
+}
+
+h5, .text-preset5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 28px;
+}
+
+h6, .text-preset6 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 28px;
+  letter-spacing: 3;
+}
+
+.text-preset7 {
+  font-weight: 1rem;
+  font-weight: normal;
+  line-height: 28px;
+  &--bold {
+    font-weight: bold;
+  }
+}
+
+button {
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 28px;
+  letter-spacing: 5px;
+}

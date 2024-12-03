@@ -1,0 +1,66 @@
+.simple {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+    padding: 38px 28px;
+    transition: 1.2s ease-in-out;
+    @media(min-width: $desktop) {
+        padding: 100px;
+    }
+    &__col1 {
+        display: flex;
+        flex-direction: column;
+        gap: 13px;
+        width: 100%;
+        height: fit-content;
+        color: #FFF;
+        @media(min-width: $desktop) {
+            max-width: 50%;
+        }
+    }
+    &__col2 {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        width: 100%;
+        gap: 50px;
+        @media(min-width:$desktop) {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-end;
+            gap: 0;
+        }
+        #extension::before {
+            content: url("../img/desktop/icon-sun.svg");
+            width: 20px;
+            height: 20px;
+            padding-right: 8px;
+        }
+    }
+    
+
+}
+
+// Quand les détails sont affichés
+.details.less + .simple {
+    bottom: 50vh;
+    padding: 38px 28px;
+    justify-content: flex-start;
+    @media(min-width:$desktop) {
+        padding: 50px 100px;
+    }
+    &__col1 {
+        display: none;
+    }
+}
+
+// Night mode
+.details.night + .simple .simple__col2 #extension::before {
+    content: url("../img/desktop/icon-moon.svg");;
+}

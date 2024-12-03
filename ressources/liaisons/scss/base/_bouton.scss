@@ -1,0 +1,26 @@
+/**
+* @author Prenom Nom courriel
+* @todo Compléter selon l'énoncé de l'exercice
+*/
+
+button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 0 15px;
+    width:min-content;
+    height: 56px;
+    border-radius: 28px;
+    border: none;
+    span {
+        color: rgba(0,0,0,0.7);
+    }
+
+    &:hover {
+        svg circle {
+            fill: #999999;
+        }
+    }
+}

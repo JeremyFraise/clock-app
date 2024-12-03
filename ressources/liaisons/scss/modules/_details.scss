@@ -1,0 +1,38 @@
+.details {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    bottom: -80vh;
+    width: -webkit-fill-available;
+    height: 40%;
+    padding: 28px;
+    transition: 1s ease-in-out;
+    background-color: rgba(255,255,255,0.7);
+    backdrop-filter: blur(10px);
+    &.night {
+        color: #FFF;
+        background-color: rgba(0,0,0,0.7);
+    }
+    @media(min-width: $desktop) {
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 10vw;
+        padding: 50px 100px;
+    }
+    &.less {
+        bottom: 0;
+    }
+
+    .details__col {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+.line {
+    width: 1px;
+    height: 100%;
+    background-color: $noir_leger;
+}

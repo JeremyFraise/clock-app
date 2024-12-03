@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/**
+ * @author Jeremy Fraser
+ * @todo Lier les modules avec des instructions @import
+ * @todo Compléter selon l'énoncé de l'exercice
+ */
+
+/*
+ * ------------------
+ * TABLE DES MATIERES
+ * ------------------
+ * Librairies
+ ** Normalize
+ * UTILITAIRES
+ ** Variables
+ ** Mixins
+ * BASE
+ ** Typographie
+ ** Hyperliens
+ ** Boutons
+ * MODULES
+ ** gds - Styles généraux du Guide de styles
+ ** palette - Palette de couleurs
+ ** listeInteractivite - Éléments interactifs
+ */
+
+/****** Librairies ******/
+
+/** Normalize **/
+//@import "../../../node_modules/normalize.scss/normalize.scss";
+
+/** Utilitaires **/
+@import "utilitaires/variables";
+@import "utilitaires/mixins";
+
+/** Base **/
+@import "base/bouton";
+@import "base/hyperlien";
+@import "base/typo";
+@import "base/grille";
+
+/** Modules **/
+@import "modules/general";
+@import "modules/chargement";
+@import "modules/simple";
+@import "modules/details";
+@import "modules/normalize";
